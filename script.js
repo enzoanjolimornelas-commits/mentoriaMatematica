@@ -16,6 +16,7 @@ const cidadeInput = document.getElementById('cidade');
 const ufInput = document.getElementById('uf');
 
 cepInput.addEventListener('blur', async () => {
+
     let cep = cepInput.value.replace(/\D/g, '');
 
     if(cep.length === 8) {
@@ -36,4 +37,16 @@ cepInput.addEventListener('blur', async () => {
             alert("Erro na conexão com o ViaCEP.");
         }
     }
+
+});
+
+const form = document.getElementById('form');
+const feedbackMsg = document.getElementById('form-feedback');
+
+form.addEventListener('submit', (e) => {
+
+    e.preventDefault();
+    feedbackMsg.textContent = "Inscrição enviada com sucesso! Entraremos em contato em breve.";
+    form.reset();
+
 });
