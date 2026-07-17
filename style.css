@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    background-image: linear-gradient(rgba(10, 37, 64, 0.85), rgba(10, 37, 64, 0.95)), url('img/mentoriaMatematica.png');
+    background-image: linear-gradient(rgba(10, 37, 64, 0.85), rgba(10, 37, 64, 0.95)), url('img/mentoriaMatematica.webp');
     color: var(--texto);
     text-align: center;
     padding: 80px 20px;
