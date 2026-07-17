@@ -119,6 +119,10 @@ footer {
     }
 }
 
+.mostrar {
+    display: block !important;
+}
+
 @media only screen and (max-width: 600px) {
     .via-cep {
         grid-template-columns: 1fr;

@@ -3,7 +3,7 @@ const sobre = document.getElementById('sobre');
 
 saibaMais.addEventListener('click', () => {
     
-    if(sobre.style.display === 'none'){
+    if(sobre.style.display === 'none' || sobre.style.display === ''){
         sobre.style.display = 'block';
     } else {
         sobre.style.display = 'none';
@@ -21,10 +21,11 @@ cepInput.addEventListener('blur', async () => {
 
     if(cep.length === 8) {
         try {
+            cidadeInput.input = "Buscando..."
             const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
             const data = await response.json();
 
-            if(!data.error) {
+            if(!data.erro) {
                 cidadeInput.value = data.localidade;
                 ufInput.value = data.uf;
             } else {
