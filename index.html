@@ -12,6 +12,31 @@
         <p>Domine a ciência dos padrões, do raciocínio lógico e do abstrato, construindo os principais alicerces do conhecimento.</p>
         <button id="saiba-mais" class="botao">Saiba Mais</button>
     </header>
+    <section id="sobre" class="secao-none">
+        <h2>Sobre o projeto</h2>
+        <p>Muitas vezes, a verdadeira dificuldade no Cálculo não está nas derivadas ou integrais, mas nas lacunas deixadas lá atrás. Na verdade, o principal objetivo é construir os alicerces sólidos da matemática desde o domínio da álgebra fundamental até a compreensão profunda de funções, frações e trigonometria. Ninguém deve pular etapas, queremos garantir que você domine perfeitamente a base estrutural antes de dar o próximo passo.</p>
+    </section>
+    <section id="contato">
+        <h2>Inscreva-se na turma</h2>
+        <form id="form">
+            <div class="input">
+                <input type="text" id="nome" placeholder="Seu Nome Completo" required>
+            </div>
+            <div class="input">
+                <input type="email" id="email" placeholder="Seu E-mail" required>
+            </div>
+            <div class="input via-cep">
+                <input type="text" id="cep" placeholder="CEP (Somente números)" maxlength="8" required>
+                <input type="text" id="cidade" placeholder="Cidade" readonly>
+                <input type="text" id="uf" placeholder="Estado" readonly>
+            </div>
+            <div class="input">
+                <textarea id="mensagem" placeholder="Quais tópicos você tem mais dificuldade atualmente?" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="botao">Enviar Inscrição</button>
+        </form>
+        <p if="form-feedback" class="feedback-msg"></p>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
