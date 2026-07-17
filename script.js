@@ -5,10 +5,8 @@ saibaMais.addEventListener('click', () => {
     
     if(sobre.style.display === 'none'){
         sobre.style.display = 'block';
-        saibaMais.textContent = "Vagas Limitadas!";
     } else {
         sobre.style.display = 'none';
-        saibaMais.textContent = "Saiba Mais"
     }
 
 });
