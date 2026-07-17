@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    background-color: var(--cor-primaria);
+    background-image: linear-gradient(rgba(10, 37, 64, 0.85), rgba(10, 37, 64, 0.95)), url('img/mentoriaMatematica.png');
     color: var(--texto);
     text-align: center;
     padding: 80px 20px;
@@ -101,4 +101,10 @@ input[readonly] {
     margin-top: 15px;
     font-weight: bold;
     color: #28a745;
+}
+
+@media only screen and (max-width: 600px) {
+    .via-cep {
+        grid-template-columns: 1fr;
+    }
 }
