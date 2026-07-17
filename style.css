@@ -91,6 +91,10 @@ input[readonly] {
     cursor: not-allowed;
 }
 
+#cep[placeholder]{
+    font-size: 0.9rem;
+}
+
 .via-cep {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
